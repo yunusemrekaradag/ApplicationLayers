@@ -52,6 +52,12 @@
     <Compile Include="Giris.Designer.cs">
       <DependentUpon>Giris.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kredi.Designer.cs">
+      <DependentUpon>Kredi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ogrenci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Kredi.resx">
+      <DependentUpon>Kredi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ogrenci.resx">
       <DependentUpon>Ogrenci.cs</DependentUpon>
     </EmbeddedResource>

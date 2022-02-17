@@ -81,14 +81,9 @@ namespace BLL.Models
         /// Tüm kullanıcıları getirir.
         /// </summary>
         /// <param name="_hataMesaji"></param>
-        public DataTable listele(string _aramaDegeri, int _sefer_id, ref string _hataMesaji)
+        public DataTable listele( ref string _hataMesaji)
         {
             DataTable dtResult = new DataTable();
-
-            //Parameters:
-            _params.Clear();
-            _params.Add(new SqlParameter("@aramaDegeri", _aramaDegeri));
-            _params.Add(new SqlParameter("@sefer_id", _sefer_id));
 
             //database
             _hataMesaji = "";
