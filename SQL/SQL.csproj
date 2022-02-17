@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kutuphane.cs" />
+    <Compile Include="Kredi.cs" />
     <Compile Include="Ders.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
