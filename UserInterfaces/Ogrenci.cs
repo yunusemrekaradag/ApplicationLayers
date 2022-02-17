@@ -29,7 +29,7 @@ namespace UserInterfaces
         private void btnsil_Click(object sender, EventArgs e)
         {
             ogrenci.id = int.Parse(textBox1.Text);
-            ogrenci.sil();
+            ogrenci.sil();   
 
         }
 
