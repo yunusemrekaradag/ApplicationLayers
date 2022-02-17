@@ -16,6 +16,7 @@ namespace UserInterfaces
         {
             InitializeComponent();
         }
+
         BLL.Models.Bina _bina = new BLL.Models.Bina();
         private void gridTazele()
         {
