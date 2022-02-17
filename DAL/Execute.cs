@@ -53,7 +53,7 @@ namespace DAL
                 dtResult = null;
                 _exceptionMessage = "Bir hata oluştu. Lütfen sistem yöneticinize haber veriniz! \n [ " + ex.Message + " ]";
             }
-
+            
             //return data
             return dtResult;
         }
