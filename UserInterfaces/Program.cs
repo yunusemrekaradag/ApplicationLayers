@@ -16,7 +16,7 @@ namespace UserInterfaces
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BinaTipi());
+            Application.Run(new Giris());
         }
     }
 }
