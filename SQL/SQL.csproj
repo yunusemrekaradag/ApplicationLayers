@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{835C7381-4F76-4CD1-A59A-1480E7A9624C}</ProjectGuid>
+    <ProjectGuid>{F789B6B3-A8C7-4EFD-B32E-5E49B6F6BF8C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BLL</RootNamespace>
-    <AssemblyName>BLL</AssemblyName>
+    <RootNamespace>SQL</RootNamespace>
+    <AssemblyName>SQL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,21 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Kredi.cs" />
-    <Compile Include="Models\Ogrenci.cs" />
-    <Compile Include="Models\Sinif.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{da117c67-9782-4906-b559-d49d694ae5b9}</Project>
-      <Name>DAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SQL\SQL.csproj">
-      <Project>{f789b6b3-a8c7-4efd-b32e-5e49b6f6bf8c}</Project>
-      <Name>SQL</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
