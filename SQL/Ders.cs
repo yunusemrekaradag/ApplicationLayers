@@ -9,10 +9,7 @@ namespace SQL
         
         public class Ders
         {
-        public string ara()
-        {
-            return "select * from Ders where id = @id;";
-        }
+
         public string listele()
         {
             return "select * from Ders order by DersAdi desc;";

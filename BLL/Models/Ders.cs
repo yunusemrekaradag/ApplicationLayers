@@ -17,30 +17,7 @@ namespace BLL.Models
      private Execute _execute = new Execute();
      private SQL.Ders _sql = new SQL.Ders();
      private List<SqlParameter> _params = new List<SqlParameter>();
-        public void ara(ref string _hataMesaji)
-        {
-            //Parameters:
-            _params.Clear();
-            _params.Add(new SqlParameter("@id", id));
-
-            //database
-            _hataMesaji = "";
-            DataTable dtSefer = _execute.executeDT(_sql.ara(), _params.ToArray(), false, ref _hataMesaji);
-
-            //class map
-            if (_hataMesaji == "" && dtSefer != null && dtSefer.Rows.Count > 0)
-            {
-                id = int.Parse(dtSefer.Rows[0]["id"].ToString());
-                DersAdi = dtSefer.Rows[0]["DersAdi"].ToString();
-            }
-            else
-            {
-                _hataMesaji = "Kullanıcı bilgisi alınamadı!";
-
-                id = 0;
-                DersAdi = "";
-            }
-        }
+        
         public DataTable listele(string aramaDegeri, ref string _hataMesaji)
         {
             DataTable dtResult = new DataTable();
