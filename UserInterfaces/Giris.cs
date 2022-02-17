@@ -23,7 +23,7 @@ namespace UserInterfaces
             string _hataMesaji = "";
 
             _giris.kullaniciAdi = txtKullaniciAdi.Text;
-            _giris.kullaniciSifresi = txtKullaniciSifre.Text;
+            _giris.kullaniciSifre = txtKullaniciSifre.Text;
             _giris.giris(ref _hataMesaji);
 
             if (_giris.id > 0)

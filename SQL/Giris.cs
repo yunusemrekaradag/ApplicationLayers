@@ -10,7 +10,7 @@ namespace SQL
     {
         public string giris()
         {
-            return "select * from KULLANICI where (kullaniciAdi = @kullaniciAdi and kullaniciSifresi = @kullaniciSifresi) or id = @id; ";
+            return "select * from KULLANICI where (kullaniciAdi = @kullaniciAdi and kullaniciSifre = @kullaniciSifre) ; ";
         }
     }
 }

@@ -15,18 +15,18 @@ namespace BLL.Models
     {
         public int id { get; set; }
         public string kullaniciAdi { get; set; }
-        public string kullaniciSifresi { get; set; }
+        public string kullaniciSifre { get; set; }
 
         Execute _execute = new Execute();
         SQL.Giris _girisSql = new SQL.Giris();
-        List<SqlParameter> _params = new List<SqlParameter>();
+        
 
         public void giris(ref string _hataMesaji)
         {
-            _params.Clear();
+            List<SqlParameter> _params = new List<SqlParameter>();
             _params.Add(new SqlParameter("@kullaniciAdi", kullaniciAdi));
-            _params.Add(new SqlParameter("@sifresi", kullaniciSifresi));
-            _params.Add(new SqlParameter("@id", id));
+            _params.Add(new SqlParameter("@kullaniciSifre", kullaniciSifre));
+
 
             _hataMesaji = "";
 
@@ -36,7 +36,7 @@ namespace BLL.Models
             {
                 id = int.Parse(dt.Rows[0]["id"].ToString());
                 kullaniciAdi = dt.Rows[0]["kullaniciAdi"].ToString();
-                kullaniciSifresi = dt.Rows[0]["kullaniciSifresi"].ToString();
+                kullaniciSifre = dt.Rows[0]["kullaniciSifre"].ToString();
                 
             }
             else
@@ -45,7 +45,7 @@ namespace BLL.Models
 
                 id = 0;
                 kullaniciAdi = "";
-                kullaniciSifresi = "";
+                kullaniciSifre = "";
                 
             }
 
