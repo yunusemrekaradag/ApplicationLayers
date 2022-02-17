@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\BinaTipi.cs" />
     <Compile Include="Models\Kredi.cs" />
     <Compile Include="Models\Ogrenci.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
