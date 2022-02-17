@@ -21,12 +21,20 @@ namespace UserInterfaces
         {
             BLL.Models.Giris _giris = new BLL.Models.Giris();
             string _hataMesaji = "";
+
+            _giris.kullaniciAdi = txtKullaniciAdi.Text;
+            _giris.kullaniciSifresi = txtKullaniciSifre.Text;
             _giris.giris(ref _hataMesaji);
 
-            if(_giris.id > 0)
+            if (_giris.id > 0)
             {
-                _giris.kullaniciAdi=txtKullaniciAdi.Text;
-                _giris.kullaniciSifresi = txtKullaniciSifre.Text;
+                Ogrenci _ogrenci = new Ogrenci();
+                _ogrenci.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show(_hataMesaji, "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
