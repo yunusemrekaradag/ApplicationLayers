@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bina.Designer.cs">
+      <DependentUpon>Bina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BinaTipi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinaTipi.Designer.cs">
+      <DependentUpon>BinaTipi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Giris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +76,18 @@
     <Compile Include="Ogrenci.Designer.cs">
       <DependentUpon>Ogrenci.cs</DependentUpon>
     </Compile>
+    <Compile Include="PersonelRolu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelRolu.Designer.cs">
+      <DependentUpon>PersonelRolu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Kredi.resx">
@@ -71,6 +95,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ogrenci.resx">
       <DependentUpon>Ogrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelRolu.resx">
+      <DependentUpon>PersonelRolu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <DependentUpon>Personel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

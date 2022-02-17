@@ -16,10 +16,46 @@ namespace UserInterfaces
         {
             InitializeComponent();
         }
+        BLL.Models.Ogrenci ogrenci = new BLL.Models.Ogrenci();
 
-        private void Ogrenci_Load(object sender, EventArgs e)
+       
+
+        private void btnlistele_Click(object sender, EventArgs e)
         {
+            ogrenci.listele();
+            dataGridView1.DataSource = ogrenci.listele();
+        }
 
+        private void btnsil_Click(object sender, EventArgs e)
+        {
+            ogrenci.id = int.Parse(textBox1.Text);
+            ogrenci.sil();   
+
+        }
+
+        private void btnekle_Click(object sender, EventArgs e)
+        {
+            
+            ogrenci.OgrenciAdi = txtOgrenciAdi.Text;
+           ogrenci.OgrenciSoyadi= txtOgrenciSoyadi.Text;
+
+            ogrenci.OgrenciSinif= txtogrencisinif.Text;
+
+            bool sonuc = ogrenci.ekle();
+
+        }
+
+        private void btnduzenle_Click(object sender, EventArgs e)
+        {
+            ogrenci.id = int.Parse(textBox1.Text);
+
+
+            ogrenci.OgrenciAdi = txtOgrenciAdi.Text;
+            ogrenci.OgrenciSoyadi = txtOgrenciSoyadi.Text;
+
+            ogrenci.OgrenciSinif = txtogrencisinif.Text;
+
+            bool sonuc = ogrenci.guncelle();
         }
     }
 }
