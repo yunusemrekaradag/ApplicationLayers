@@ -48,6 +48,7 @@
     <Compile Include="Models\Kutuphane.cs" />
     <Compile Include="Models\Ogrenci.cs" />
     <Compile Include="Models\Sinif.cs" />
+    <Compile Include="Models\Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
