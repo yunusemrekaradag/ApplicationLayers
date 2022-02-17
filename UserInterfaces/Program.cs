@@ -16,6 +16,7 @@ namespace UserInterfaces
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Ogrenci());
             Application.Run(new Bina());
         }
     }

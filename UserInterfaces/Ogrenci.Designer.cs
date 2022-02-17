@@ -39,6 +39,8 @@
             this.btnduzenle = new System.Windows.Forms.Button();
             this.btnsil = new System.Windows.Forms.Button();
             this.btnlistele = new System.Windows.Forms.Button();
+            this.txtid = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +49,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(293, 24);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(299, 343);
+            this.dataGridView1.Size = new System.Drawing.Size(299, 324);
             this.dataGridView1.TabIndex = 0;
             // 
             // txtOgrenciAdi
@@ -106,6 +108,7 @@
             this.btnekle.TabIndex = 7;
             this.btnekle.Text = "Ekle";
             this.btnekle.UseVisualStyleBackColor = true;
+            this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
             // 
             // btnduzenle
             // 
@@ -115,6 +118,7 @@
             this.btnduzenle.TabIndex = 8;
             this.btnduzenle.Text = "Düzenle";
             this.btnduzenle.UseVisualStyleBackColor = true;
+            this.btnduzenle.Click += new System.EventHandler(this.btnduzenle_Click);
             // 
             // btnsil
             // 
@@ -124,6 +128,7 @@
             this.btnsil.TabIndex = 9;
             this.btnsil.Text = "Sil";
             this.btnsil.UseVisualStyleBackColor = true;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
             // btnlistele
             // 
@@ -133,12 +138,31 @@
             this.btnlistele.TabIndex = 10;
             this.btnlistele.Text = "Listele";
             this.btnlistele.UseVisualStyleBackColor = true;
+            this.btnlistele.Click += new System.EventHandler(this.btnlistele_Click);
+            // 
+            // txtid
+            // 
+            this.txtid.AutoSize = true;
+            this.txtid.Location = new System.Drawing.Point(12, 19);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(16, 13);
+            this.txtid.TabIndex = 12;
+            this.txtid.Text = "Id";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(97, 19);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(124, 20);
+            this.textBox1.TabIndex = 11;
             // 
             // Ogrenci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 456);
+            this.ClientSize = new System.Drawing.Size(605, 379);
+            this.Controls.Add(this.txtid);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnlistele);
             this.Controls.Add(this.btnsil);
             this.Controls.Add(this.btnduzenle);
@@ -152,7 +176,6 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Ogrenci";
             this.Text = "Ogrenci";
-            this.Load += new System.EventHandler(this.Ogrenci_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -172,5 +195,7 @@
         private System.Windows.Forms.Button btnduzenle;
         private System.Windows.Forms.Button btnsil;
         private System.Windows.Forms.Button btnlistele;
+        private System.Windows.Forms.Label txtid;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
