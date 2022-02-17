@@ -52,6 +52,7 @@
     <Compile Include="Models\PersonelRolu.cs" />
     <Compile Include="Models\Sinif.cs" />
     <Compile Include="Models\Test.cs" />
+    <Compile Include="Models\Personel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

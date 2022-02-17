@@ -50,6 +50,7 @@
     <Compile Include="Bina.cs" />
     <Compile Include="BinaTipi.cs" />
     <Compile Include="PersonelRol.cs" />
+    <Compile Include="Personel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sinif.cs" />
   </ItemGroup>
