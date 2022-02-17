@@ -52,8 +52,17 @@
     <Compile Include="Giris.Designer.cs">
       <DependentUpon>Giris.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ogrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenci.Designer.cs">
+      <DependentUpon>Ogrenci.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ogrenci.resx">
+      <DependentUpon>Ogrenci.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Giris.resx">
       <DependentUpon>Giris.cs</DependentUpon>
     </EmbeddedResource>

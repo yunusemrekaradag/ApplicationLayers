@@ -41,8 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Ders.cs" />
+    <Compile Include="Models\KitapKayitlari.cs" />
     <Compile Include="Models\Giris.cs" />
     <Compile Include="Models\Kredi.cs" />
+    <Compile Include="Models\Kutuphane.cs" />
+    <Compile Include="Models\Ogrenci.cs" />
+    <Compile Include="Models\Sinif.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
