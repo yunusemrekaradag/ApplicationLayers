@@ -45,6 +45,7 @@
     <Compile Include="Models\KitapKayitlari.cs" />
     <Compile Include="Models\Giris.cs" />
     <Compile Include="Models\Bina.cs" />
+    <Compile Include="Models\BinaTipi.cs" />
     <Compile Include="Models\Kredi.cs" />
     <Compile Include="Models\Kutuphane.cs" />
     <Compile Include="Models\Ogrenci.cs" />

@@ -52,6 +52,12 @@
     <Compile Include="Bina.Designer.cs">
       <DependentUpon>Bina.cs</DependentUpon>
     </Compile>
+    <Compile Include="BinaTipi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinaTipi.Designer.cs">
+      <DependentUpon>BinaTipi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Giris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,9 +72,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Bina.resx">
-      <DependentUpon>Bina.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Ogrenci.resx">
       <DependentUpon>Ogrenci.cs</DependentUpon>
     </EmbeddedResource>

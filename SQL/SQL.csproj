@@ -48,6 +48,7 @@
     <Compile Include="Giris.cs" />
     <Compile Include="OgrenciSql.cs" />
     <Compile Include="Bina.cs" />
+    <Compile Include="BinaTipi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sinif.cs" />
   </ItemGroup>
