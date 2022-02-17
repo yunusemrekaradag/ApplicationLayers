@@ -16,5 +16,19 @@ namespace UserInterfaces
         {
             InitializeComponent();
         }
+
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+            BLL.Models.Giris _giris = new BLL.Models.Giris();
+            string _hataMesaji = "";
+            _giris.giris(ref _hataMesaji);
+
+            if(_giris.id > 0)
+            {
+                _giris.kullaniciAdi=txtKullaniciAdi.Text;
+                _giris.kullaniciSifresi = txtKullaniciSifre.Text;
+            }
+
+        }
     }
 }
