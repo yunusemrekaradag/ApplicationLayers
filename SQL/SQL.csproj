@@ -41,8 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kutuphane.cs" />
+    <Compile Include="Kredi.cs" />
+    <Compile Include="Ders.cs" />
+    <Compile Include="KitapKayitlari.cs" />
+    <Compile Include="Giris.cs" />
     <Compile Include="OgrenciSql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sinif.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
